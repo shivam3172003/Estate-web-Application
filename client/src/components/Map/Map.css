@@ -1,0 +1,8 @@
+.map {
+    /* background-color: aqua; */
+    height: calc(100vh - 100px);
+    border-radius: 20px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+

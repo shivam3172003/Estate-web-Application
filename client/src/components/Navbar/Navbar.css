@@ -1,0 +1,169 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 20px;
+    box-shadow: 0 0 1px rgba(168, 154, 154, 0.15), 0 2px 1px rgba(182, 177, 177, 0.15);
+}
+
+nav .active{
+    color: white;
+    background-color: rgb(43, 43, 43);
+    border-radius: 5px;
+    padding: 10px;
+    transition: all 0.4s ease;
+
+}
+
+nav .left {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+nav .left .logo {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav .left .logo img {
+    width: 28px;
+}
+
+nav .right {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #fcf5f3;
+    height: 100px;
+    box-shadow: 0 0 1px rgba(168, 154, 154, 0.15), 0 2px 1px rgba(182, 177, 177, 0.15);
+}
+
+nav .right a {
+    padding: 12px 24px;
+    margin: 20px;
+}
+
+nav .right .register1 {
+    background-color: #fece51;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+nav .right .user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+nav .right .user img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+nav .right .user span {
+    font-weight: 500;
+}
+
+nav .right .profile {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fece51;
+    cursor: pointer;
+}
+
+nav .right .profile .notification {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: red;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.4s ease;
+}
+
+nav a:hover {
+    transform: scale(1.2);
+}
+
+.menuIcon {
+    display: none;
+    z-index: 999;
+}
+
+.menuIcon img {
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+}
+
+.menu {
+    position: absolute;
+    background-color: black;
+    color: white;
+    height: 100vh;
+    width: 50%;
+    top: 0;
+    right: -50%;
+    transition: all 0.8s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.menu.active {
+    right: 0;
+}
+
+.menu a {
+    display: block;
+    color: aliceblue;
+}
+
+@media (max-width: 768px) {
+
+    .a1,
+    .register1 {
+        display: none;
+    }
+
+    .menuIcon {
+        display: block;
+    }
+
+    .menu a {
+        display: block;
+    }
+}
+
+@media (max-width: 1024px) {
+    .span {
+        display: none;
+    }
+}
